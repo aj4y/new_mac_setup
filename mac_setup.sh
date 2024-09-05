@@ -13,7 +13,6 @@ brew update
 brew upgrade
 
 # Install development tools
-brew install git
 brew install python
 brew install r
 brew install zsh
