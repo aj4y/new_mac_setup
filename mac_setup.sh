@@ -11,11 +11,14 @@ fi
 # Update and upgrade Homebrew
 brew update
 brew upgrade
+brew cleanup
 
-# Install development tools
+Install development tools
 brew install python
 brew install r
 brew install zsh
+brew install htop
+brew install youtube-dl
 
 
 # Install essential software
@@ -67,5 +70,8 @@ brew cleanup
 
 #Install R packages 
 Rscript install_packages.R
+
+#Install python packages 
+python install_python_packages.py
 
 echo "Setup complete!"
