@@ -8,6 +8,11 @@ else
     echo "Homebrew is already installed"
 fi
 
+touch ~/.zshrc 
+echo "export PATH=$PATH:/opt/homebrew/bin" >> ~/.zshrc
+echo "\nalias ll='ls -la'" >> ~/.zshrc
+echo "\nalias cls='clear'" >> ~/.zshrc
+
 # Update and upgrade Homebrew
 brew update
 brew upgrade
@@ -19,6 +24,10 @@ brew install r
 brew install zsh
 brew install htop
 brew install youtube-dl
+brew install yt-dpl
+brew install fzf
+brew install rmlint
+brew install ncdu
 
 
 # Install essential software
