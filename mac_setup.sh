@@ -12,6 +12,8 @@ touch ~/.zshrc
 echo "export PATH=$PATH:/opt/homebrew/bin" >> ~/.zshrc
 echo "\nalias ll='ls -la'" >> ~/.zshrc
 echo "\nalias cls='clear'" >> ~/.zshrc
+echo "\nalias update_brew='brew update;brew upgrade;brew updgrade --cask;brew cleanup'" >> ~/.zshrc
+
 
 # Update and upgrade Homebrew
 brew update
